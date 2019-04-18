@@ -14,6 +14,7 @@ import java.util.Date;
 @RestController
 @RequestMapping(value = "/api/comment")
 public class CommentController {
+
     @Resource
     private CommentService commentService;
 
@@ -26,5 +27,6 @@ public class CommentController {
         comment.setCommentTime(new Date());
         commentService.addComment(comment);
         return ResponseResult.success();
+
     }
 }
