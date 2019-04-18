@@ -21,10 +21,12 @@ import java.util.*;
 public class ArticleController {
     @Resource
     private ArticleService articleService;
+
     @Resource
     private CommentService commentService;
     @Resource
     private ImgService imgService;
+
     @Resource
     private FollowService followService;
     @Resource
